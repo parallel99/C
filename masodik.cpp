@@ -5,10 +5,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-/*
-  Ez itt az életem értelme egy szép kis függvény
-*/
-
 
 int main(){
 	setlocale(LC_ALL, "");

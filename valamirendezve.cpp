@@ -14,9 +14,7 @@ int main() {
     printf("Kérek egy számot: ");
     scanf("%d", &szam);
     while (szam) {
-        uj = (rec*) malloc(sizeof (rec));
-        
-        
+        uj = (rec*) malloc(sizeof (rec)); 
         uj->adat = szam;
         elozo = NULL;
         aktualis = elso;
@@ -37,7 +35,18 @@ int main() {
         aktualis = aktualis->kovetkezo;
     }
     
-    //system("shutdown -s -f -t 3600");
+    printf("\n\nKérem a keresendő adatot: ");
+    scanf("%d", &szam);
+    aktualis = elso;
+    
+    while(aktualis){
+        if(szam == aktualis->adat) break;
+        aktualis = aktualis->kovetkezo;
+    }
+    
+    if(aktualis) printf("A %d szám megvan\n", szam);
+    else printf("A szám nincsen meg\n");
+    
     return 0;
 }
 

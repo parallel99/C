@@ -1,29 +1,29 @@
 #include <iostream>
-#include <stdio.h>
-#include <string>
-#include <vector>
-#include <stdlib.h>
-#include <time.h>
 
 
 int main(){
-	setlocale(LC_ALL, "");
-	/*
-	  Ez lehet t√∂bb soros (J√≥  most nem arra Soros-ra gondolok)
-	  Na √©s itt folytatom az eg√©szet
-	*/
+	setlocale(LC_ALL, "");	
 	
-	int a;
+	int n;
 	
-	printf("K√©rek egy sz√°mot: ");
-	scanf("%f", &a);
-	
-	if(a > 0){
-		printf("A be√≠rt sz√°m poz√≠tiv %d", &a);
-	} else if(a < 0){
-		printf("A be√≠rt sz√°m negat√≠v %d", &a);
-	} else {
-		printf("A be√≠rt sz√°m 0");
+ 	printf("KÈrem a nap sz·m·t: ");
+	scanf("%d", &n);
+	 	
+ 	if(0 < n &&  n < 6){
+ 		printf("HÈtkˆznap van!\n");
+	} else if (n > 5 && n < 8) {
+		printf("HÈtvÈge van!\n");
+	}
+ 	
+ 	switch(n){
+	case 1: printf("HÈtfı"); break;
+	case 2: printf("Kedd"); break;
+	case 3: printf("Szerda"); break; 
+	case 4: printf("Cs¸tˆrtˆk"); break;
+	case 5: printf("PÈntek"); break; 
+	case 6: printf("Szombat"); break;
+	case 7: printf("Vas·rnap"); break; 
+	default: printf("Nem egy nap sz·m·t adta meg!");
 	}
  	
 	return 0;

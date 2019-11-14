@@ -40,7 +40,7 @@ char numerikus(char *szoveg) {
 }
 
 void beolvas(char *szoveg) {
-    printf("Kérem a szöveget: ");
+    printf("KÃ©rem a szÃ¶veget: ");
     
     scanf("%[^\n]", szoveg);
 }

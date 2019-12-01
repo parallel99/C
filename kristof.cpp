@@ -5,7 +5,7 @@
 using namespace std;
 
 /*
- * A feladatsor 2. feladat 
+ * A feladatsor 3. feladat 
  * Úgy megírva, hogy minden legyen benne ami tanultunk az objektumokról
  */
 

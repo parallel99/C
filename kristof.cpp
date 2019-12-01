@@ -10,7 +10,7 @@ using namespace std;
  */
 
 class Szoveg { //itt létrehoztuk az osztályt
-protected: // Ez az jelenti, hogy ami ezután következik azt csak az osztályban és a leszármazott osztálykban lehet használni
+protected: // Ez az jelenti, hogy ami ezután következik azt csak az osztályban és a leszármazott osztályban lehet használni
     char szoveg[80]; // létrehoztunk egy tömböt
 
     void beolvas(){

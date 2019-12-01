@@ -14,7 +14,7 @@ protected: // Ez az jelenti, hogy ami ezután következik azt csak az osztályba
     char szoveg[80]; // létrehoztunk egy tömböt
 
     void beolvas(){
-        //egy egyzserű beolvasás egy metódusban
+        //egy egyszerű beolvasás egy metódusban
         printf("Kérek egy szöveget: ");
         scanf("%[^\n]", szoveg);
     }
@@ -27,9 +27,9 @@ protected: // Ez az jelenti, hogy ami ezután következik azt csak az osztályba
 class Szamok : Szoveg {
     /*
      * 
-     * Az osztály neve az hogy számok és leszármazotja a Szoveg osztálynak
+     * Az osztály neve az hogy számok, és leszármazotja a Szoveg osztálynak
      * Ezért a public vagy protected-ben lévő dolgokat megörökli
-     * Másnéven itt is meglehet hívni az osztályokat, vagy elérhetjük a benne lévő változókat
+     * Másnéven itt is meglehet hívni az metódusokat, vagy elérhetjük a benne lévő változókat
      * 
      */
 private:    
@@ -46,7 +46,7 @@ public:
          * Mindig az osztályból ez fut le először
          * 
          */
-        beolvas();// itt meghívjuk a beolvasás metódust, erre azért van lehetőségünk mert ez egy leszármazott osztály
+        beolvas();// itt meghívjuk a beolvas metódust, erre azért van lehetőségünk mert ez egy leszármazott osztály
         kiir();
         char *sz;
         sz = szoveg;
@@ -62,7 +62,7 @@ public:
          /*
          * 
          * Ez egy Destructor
-         * Mindig az osztály neve és előttee van ez a jel: '~', így tudjuk hogy ez a Destructor
+         * Mindig az osztály neve, és előtte van ez a jel: '~', így tudjuk hogy ez a Destructor
          * Mindig az osztályból ez fut le utoljára
          * Minden más tulajdonságában megegyezik a konstruktorral
          * 
@@ -72,7 +72,7 @@ public:
 };
 
 int main() { 
-    Szamok sz;// itt meghívjuk az osztályt és sz névvel hivatkozunk rá
+    Szamok sz;// itt meghívjuk az osztályt és 'sz' névvel hivatkozunk rá
     /*
      * 
      * Mivel a konstruktor mindig lefut ezért nem hívunk meg semmit itt
